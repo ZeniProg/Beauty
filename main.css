@@ -1,10 +1,10 @@
-.header {
+.header__top-menu {
   z-index: 10;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: gray;
+  background: #EFEFEF;
 }
 
 .top-menu {
@@ -85,5 +85,120 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.header__midst {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  border: 1px solid #EFEFEF;
+}
+
+.midst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.midst__logo-link {
+  margin-right: 170px;
+}
+
+.midst__logo-img {
+  max-width: 260px;
+  height: auto;
+}
+
+.midst__link {
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.midst__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #F13C6E;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.midst__link:hover {
+  color: #F13C6E;
+}
+
+.midst__link:hover::after {
+  width: 100%;
+}
+
+.midst__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 12px 26px;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.midst__button:hover {
+  color: #ffffff;
+  background-color: #F13C6E;
+}
+
+.form__wrap {
+  position: relative;
+}
+
+.form-wrap {
+  margin-right: 95px;
+}
+
+.form-wrap__input {
+  max-width: 250px;
+  border: none;
+  background-color: #EFEFEF;
+  padding: 10px 9px 10px 35px;
+  border-radius: 40px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.form-wrap__input:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-wrap__button {
+  border: none;
+  padding: 0;
+  width: 20%;
+  height: 110%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

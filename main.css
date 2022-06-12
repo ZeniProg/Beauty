@@ -28,6 +28,21 @@ body {
   list-style: none;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Bold.woff2);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Medium.woff2);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Regular.woff2);
+}
+
 .header__top-menu {
   z-index: 10;
   position: fixed;
@@ -530,6 +545,16 @@ body {
   max-width: 255px;
 }
 
+.footer__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
 .footer-menu__title {
   margin: 0;
   padding-bottom: 30px;
@@ -565,5 +590,80 @@ body {
 
 .menu-list__link:hover {
   color: #000000;
+}
+
+.footer-data {
+  margin-right: 205px;
+}
+
+.footer-data__img {
+  max-width: 45px;
+  height: auto;
+}
+
+.footer-data__social-link {
+  margin-right: 20px;
+}
+
+.footer-data__social-link:last-child {
+  margin: 0;
+}
+
+.footer-data__position {
+  margin-right: 105px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-data__link {
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer-data__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #F13C6E;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-data__link:hover {
+  color: #F13C6E;
+}
+
+.footer-data__link:hover::after {
+  width: 100%;
+}
+
+.footer-data__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-data__button:hover {
+  color: #ffffff;
+  background-color: #F13C6E;
 }
 /*# sourceMappingURL=main.css.map */

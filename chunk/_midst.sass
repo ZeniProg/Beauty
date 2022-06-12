@@ -3,7 +3,7 @@
   &__midst
     padding-top: 70px
     padding-bottom: 40px
-    border: 1px solid #EFEFEF
+    border: 1px solid $gray-color
 
 .midst
   display: flex
@@ -22,17 +22,17 @@
     font-family: 'Roboto', sans-serif
     font-weight: 400
     font-size: 16px
-    color: #000000
+    color: $black-color
     transition: all .2s
     &::after
       content: ''
       display: block
       height: 2px
-      background-color: #F13C6E
+      background-color: $pink-color
       width: 0%
       transition: .2s
     &:hover
-      color: #F13C6E
+      color: $pink-color
       &::after
         width: 100%
 
@@ -41,17 +41,17 @@
     border: none
     background-color: transparent
     padding: 12px 26px
-    border: 2px solid #F13C6E
+    border: 2px solid $pink-color
     border-radius: 40px
     font-family: 'Roboto', sans-serif
     font-weight: 400
     font-size: 14px
-    color: #000000
+    color: $black-color
     cursor: pointer
-    transition: color .3s
+    transition: all .3s
     &:hover
-      color: #ffffff
-      background-color: #F13C6E
+      color: $white-color
+      background-color: $pink-color
 
 .form
 
@@ -64,7 +64,7 @@
   &__input
     max-width: 250px
     border: none
-    background-color: #EFEFEF
+    background-color: $gray-color
     padding: 10px 9px 10px 35px
     border-radius: 40px
     outline: none
@@ -81,7 +81,6 @@
     padding: 0
     width: 20%
     height: 110%
-    padding: 0
     background-color: transparent
     border: none
     position: absolute

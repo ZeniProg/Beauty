@@ -1,1 +1,67 @@
+.info
+  background-color: $gray-color
 
+  &__blocks
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 540px
+    padding: 35px 45px 35px 40px
+    border-radius: 5px
+    background-color: $pink-color
+
+.info-block
+
+  &__content
+    max-width: 265px
+    margin-right: 50px
+
+.block-content
+
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+    font-size: 18px
+    color: $white-color
+
+  &__text
+    margin: 0
+    margin-bottom: 25px
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 14px
+    color: $white-color
+
+  &__input
+    border: none
+    outline: none
+    max-width: 225px
+    padding: 10px 38px 10px 25px
+    border-radius: 30px
+    transition: box-shadow .3s
+    &:hover
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+  &__link
+    display: inline-block
+    padding: 8px 28px
+    text-decoration: none
+    background: $pink-color
+    border: 2px solid $white-color
+    border-radius: 40px
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 14px
+    color: $white-color
+    transition: all .2s
+    &:hover
+      border: 2px solid $pink-color
+      background-color: $white-color
+      color: $black-color

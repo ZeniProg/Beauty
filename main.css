@@ -552,6 +552,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 
 .footer__info {
@@ -598,7 +599,6 @@ body {
 
 .footer-data {
   margin-right: 205px;
-  padding-bottom: 40px;
 }
 
 .footer-data__img {
